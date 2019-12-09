@@ -5,10 +5,15 @@
   padding: 0;
   list-style: none;
 }
-#body{
+html{
+  overflow-x: hidden !important;
+ }
+#body, html{
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
+    max-width: 100%;
     overflow-x: hidden;
+    position: relative;
 }
 
 .cont{
@@ -103,8 +108,6 @@
     
 }
 
-
-
 #one{
   letter-spacing: 10px;
   margin-right: 3%;
@@ -112,6 +115,21 @@
 
 #two{
   margin-left: 20px;
+}
+
+@media screen and (max-width: 452px){
+    .title h1{
+    font-size: 2em;
+    }
+
+    .title img{
+      width: 100px;
+      height: auto;
+    }
+    #one{
+  letter-spacing: 5px;
+  margin-right: 3%;
+  }
 }
 
 /*Navigation*/
