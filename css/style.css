@@ -8,6 +8,7 @@
 #body{
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 .cont{
@@ -689,6 +690,16 @@
   width: 60%;
   }
     
+}
+
+@media screen and (max-width: 538px){
+
+  .bosEng{
+    flex-direction: column;
+  }
+  .jap{
+  flex-direction: column;
+  }
 }
 
 /*contact me*/
