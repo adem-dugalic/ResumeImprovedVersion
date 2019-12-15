@@ -1,5 +1,10 @@
 // Div switching script
 
+
+var menu = document.querySelector('.menu');
+var nav = document.querySelector('.links');
+var navLinks = document.querySelectorAll('.links li');
+
 var about = document.querySelector('.white-container1');
 var aboutBtn = document.getElementById('about');
 var education = document.querySelector('.white-container2');
@@ -20,15 +25,51 @@ education.style.display = 'none';
 work.style.display = "none";
 skills.style.display = "none";
 contact.style.display = "none";
+home.style.display = 'none';
 
 aboutBtn.addEventListener('click',function(){
+    if($(window).width()< 769){
+        nav.classList.toggle('navigation-active');
+
+        navLinks.forEach((link,index)=>{
+            if(link.style.animation){
+            link.style.animation = '';
+            }else{
+                link.style.animation = `Fade 0.5s ease forwards ${index/7+0.6 }s`;
+            }
+        });
+        if(nav.style.right == '4%'){
+            nav.style.right = '0';
+        }else{
+            nav.style.right = '4%'
+        }
+        menu.classList.toggle('toggle'); 
+    }
 	home.style.display = 'none';
 	about.style.display = "";
 	education.style.display = "none";
-	content.style.background = '#fff';
+	content.style.background = '#F09400';
 	contact.style.display = "none";
+    skills.style.display = "none";
 });
 homeBtn.addEventListener('click',function(){
+    if($(window).width()< 769){
+        nav.classList.toggle('navigation-active');
+
+        navLinks.forEach((link,index)=>{
+            if(link.style.animation){
+            link.style.animation = '';
+            }else{
+                link.style.animation = `Fade 0.5s ease forwards ${index/7+0.6 }s`;
+            }
+        });
+        if(nav.style.right == '4%'){
+            nav.style.right = '0';
+        }else{
+            nav.style.right = '4%'
+        }
+        menu.classList.toggle('toggle'); 
+    }
 	home.style.display = '';
 	about.style.display = 'none';
 	education.style.display = "none";
@@ -38,7 +79,24 @@ homeBtn.addEventListener('click',function(){
 	contact.style.display = "none";
 });
 eduBtn.addEventListener('click',function(){
-	content.style.background = '#fff';
+    if($(window).width()< 769){
+        nav.classList.toggle('navigation-active');
+
+        navLinks.forEach((link,index)=>{
+            if(link.style.animation){
+            link.style.animation = '';
+            }else{
+                link.style.animation = `Fade 0.5s ease forwards ${index/7+0.6 }s`;
+            }
+        });
+        if(nav.style.right == '4%'){
+            nav.style.right = '0';
+        }else{
+            nav.style.right = '4%'
+        }
+        menu.classList.toggle('toggle'); 
+    }
+	content.style.background = '#1abc9c';
 	home.style.display = 'none';
 	about.style.display = 'none';
 	education.style.display = "";
@@ -47,7 +105,24 @@ eduBtn.addEventListener('click',function(){
 	contact.style.display = "none";
 });
 workBtn.addEventListener('click',function(){
-	content.style.background = '#fff';
+    if($(window).width()< 769){
+        nav.classList.toggle('navigation-active');
+
+        navLinks.forEach((link,index)=>{
+            if(link.style.animation){
+            link.style.animation = '';
+            }else{
+                link.style.animation = `Fade 0.5s ease forwards ${index/7+0.6 }s`;
+            }
+        });
+        if(nav.style.right == '4%'){
+            nav.style.right = '0';
+        }else{
+            nav.style.right = '4%'
+        }
+        menu.classList.toggle('toggle'); 
+    }
+	content.style.background = '#177FE8';
 	home.style.display = 'none';
 	about.style.display = 'none';
 	education.style.display = "none";
@@ -56,7 +131,24 @@ workBtn.addEventListener('click',function(){
 	contact.style.display = "none";
 });
 skillsBtn.addEventListener('click',function(){
-	content.style.background = '#1a1a1a';
+    if($(window).width()< 769){
+        nav.classList.toggle('navigation-active');
+
+        navLinks.forEach((link,index)=>{
+            if(link.style.animation){
+            link.style.animation = '';
+            }else{
+                link.style.animation = `Fade 0.5s ease forwards ${index/7+0.6 }s`;
+            }
+        });
+        if(nav.style.right == '4%'){
+            nav.style.right = '0';
+        }else{
+            nav.style.right = '4%'
+        }
+        menu.classList.toggle('toggle'); 
+    }
+	content.style.background = '#AB58F4';
 	home.style.display = 'none';
 	about.style.display = 'none';
 	education.style.display = "none";
@@ -65,6 +157,23 @@ skillsBtn.addEventListener('click',function(){
 	contact.style.display = "none";
 });
 contactBtn.addEventListener('click',function(){
+    if($(window).width()< 769){
+        nav.classList.toggle('navigation-active');
+
+        navLinks.forEach((link,index)=>{
+            if(link.style.animation){
+            link.style.animation = '';
+            }else{
+                link.style.animation = `Fade 0.5s ease forwards ${index/7+0.6 }s`;
+            }
+        });
+        if(nav.style.right == '4%'){
+            nav.style.right = '0';
+        }else{
+            nav.style.right = '4%'
+        }
+        menu.classList.toggle('toggle'); 
+    }
 	content.style.background = '#1a1a1a';
 	home.style.display = 'none';
 	about.style.display = 'none';
@@ -77,11 +186,6 @@ contactBtn.addEventListener('click',function(){
 
 // Navigation responsive script
 
-
-var menu = document.querySelector('.menu');
-var nav = document.querySelector('.links');
-var navLinks = document.querySelectorAll('.links li');
-
 menu.addEventListener('click', function(){
 	nav.classList.toggle('navigation-active');
 
@@ -92,10 +196,10 @@ menu.addEventListener('click', function(){
 			link.style.animation = `Fade 0.5s ease forwards ${index/7+0.6 }s`;
 		}
 	});
-	if(nav.style.right == '12%'){
+	if(nav.style.right == '4%'){
 		nav.style.right = '0';
 	}else{
-		nav.style.right = '12%'
+		nav.style.right = '4%'
 	}
 	menu.classList.toggle('toggle');
 
@@ -256,10 +360,20 @@ window.addEventListener('mouseout',
 init();
 animate();
 
-
+/*prevent scrolling on mobile phones on x axis*/
 var scrollEventHandler = function()
 {
   window.scroll(0, window.pageYOffset)
 }
 
 window.addEventListener("scroll", scrollEventHandler, false);
+
+
+
+//EXPERIMENTAL
+
+// loader
+$(window).on("load",function(){
+   $(".loader").fadeOut("slow");
+   home.style.display = '';
+});
