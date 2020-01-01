@@ -271,19 +271,19 @@
 		</div>
 	</div>
 	<div class="gray-containerC">
-		<form class="contact">
+		<form class="contact" method="post" action="php/email.php">
 			<h2>Contact me</h2>
 			<div class="rowF">
 				<div class="colF">
 					<div class="inputBox">
-						<input type="text" name="" required="required">
+						<input type="text" name="name" required="required">
 						<span class="textF">First Name</span>
 						<span class="lineF"></span> 
 					</div>
 				</div>
 				<div class="colF">
 					<div class="inputBox">
-						<input type="text" name="" required="required">
+						<input type="text" name="surname" required="required">
 						<span class="textF">Last Name</span>
 						<span class="lineF"></span> 
 					</div>
@@ -292,14 +292,14 @@
 			<div class="rowF">
 				<div class="colF">
 					<div class="inputBox">
-						<input type="text" name="" required="required">
+						<input type="text" name="email" required="required">
 						<span class="textF">Email</span>
 						<span class="lineF"></span> 
 					</div>
 				</div>
 				<div class="colF">
 					<div class="inputBox">
-						<input type="text" name="" required="required">
+						<input type="text" name="phone" required="required">
 						<span class="textF">Mobile</span>
 						<span class="lineF"></span> 
 					</div>
@@ -308,7 +308,7 @@
 			<div class="rowF">
 				<div class="colF">
 					<div class="inputBox textarea">
-						<textarea required="required"></textarea>
+						<textarea required="required" name="message"></textarea>
 						<span class="textF">Type your message here..</span>
 						<span class="lineF" style="width: 98%"></span> 
 					</div>
@@ -323,6 +323,7 @@
 	</div>
 
 </div>
+	<script>document.write('<script src="http://' + (location.host || '${1:localhost}').split(':')[0] + ':${2:35729}/livereload.js?snipver=1"></' + 'script>')</script>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 </body>
