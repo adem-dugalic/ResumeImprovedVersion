@@ -16,7 +16,7 @@
      $mail ->Port = 465; // or 587
      $mail ->IsHTML(true);
      $mail ->Username = "DevIUS.ius@gmail.com";
-     $mail ->Password = "DevIUS123456789%";
+     $mail ->Password = "**************";
      $mail ->SetFrom("DevIUS.ius@gmail.com");
      $mail ->Subject = $mailSub;
      $mail ->Body = $name." ".$surname."<br>".$phone."<br>".$email."<br><br>".$mailMsg;
