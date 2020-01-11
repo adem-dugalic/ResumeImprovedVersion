@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="My resume">
+  	<meta name="keywords" content="HTML,CSS,JavaScript">
+  	<meta name="author" content="Adem Dugalić">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<title>Adem Dugalić</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/circle.css">
+</head>
+<body id="body" lang="en">
+
+<div class="loader">
+	<div class="loader-center">
+		<span class="spin"><span class="spin-inner"></span></span>
+	</div>
+</div>
+
+<div class="cont demo">
+	<div class="navigation">
+		<ul class="links">
+			<li>
+				<a id="home" href="#"><span data-hover="Home">Home</span></a>
+			</li>
+			<li>
+				<a id="about" href="#"><span data-hover="About">About</span></a>
+			</li>
+			<li>
+				<a id="education" href="#"><span data-hover="Education">Education</span></a>
+			</li>
+			<li>
+				<a id="work"  href="#"><span data-hover="Work&Experiance">Work&Experiance</span></a>
+			</li>
+			<li>
+				<a id="skills" href="#"><span data-hover="Skills&Projects">Skills&Projects</span></a>
+			</li>
+			<li>
+				<a id="contactme" href="#"><span data-hover="Contact me">Contact me</span></a>
+			</li>
+		</ul>
+		<div class="menu">
+			<div class="line1"></div>
+			<div class="line2"></div>
+			<div class="line3"></div>
+		</div>
+	</div>
+	<div class="title">
+		<canvas id="canvas1"></canvas>
+		<h1 id="one" data-text="ADEM">ADEM</h1>
+		<img src="img/skeri.png">
+		<h1 id="two" data-text="DUGALIĆ" >DUGALIĆ</h1>
+	</div>
+<!-- about -->
+
+	<div class="white-container1">
+		<h1 class="Section-title">About</h1>
+		<div class="info-container">
+			<img src="img/Adem.png" id="Adem" class="Adem"></img>
+			<div class="about">
+				<h3>My passion, goals and dreams</h3>
+				<p class="section">Born in Zenica in 1998, I was a wild child. Ever since I could speak I always wanted to be a CEO of a Bank. I soon realised that I liked something even more than economy and that is programming. I love creating, molding and modeling. I live my imagination and to be able to realise it I use programming. One day I hope to achieve full Virtual Reality.</p>
+				<strong>Phone number:</strong><br>
+				+387603506310<br>
+				<strong>Email:</strong><br>
+				<a id="mail" href="mailto:dugalice@gmail.com">dugalice@gmail.com</a><br>
+			</div>
+		</div>
+  	</div>
+
+<!-- Education -->
+
+  	<div class="white-container2">
+  	<h1 class="Section-title">Education</h1>
+  	<div class="container1">
+    <div class="box">
+        <div class="imgBx">
+            <img src="img/MK.png">
+        </div>
+        <div class="content">
+            <h3>OŠ Miroslav Krleža(2004 - 2013)</h3>
+            <p class="text-p">Finished primary school Miroslav Krleža in Zenica with very good grades.</p>
+        </div>
+    </div>
+    <div class="box">
+        <div class="imgBx">
+            <img src="img/ekonomska.png">
+        </div>
+        <div class="content">
+            <h3>Srednja Ekonomska Škola Zenica(2013 - 2017)</h3>
+            <p>Finished Highschool Ekonomska Škola in Zenica with perfect grades.<br>
+				Was an active member of democracy club.</p>
+        </div>
+    </div>
+    <div class="box">
+        <div class="imgBx">
+            <img src="img/IUS.jpg">
+        </div>
+        <div class="content">
+            <h3>International University of Sarajevo(2017 - Now)</h3>
+            <p>Currently 3rd year at IUS styding Computer Science and Engeneering.<br>
+					President of <a id="devius" href="https://devius.netlify.com/">DevIUS</a>.</p>
+        </div>
+    </div>
+   </div>
+</div>
+
+
+<!-- Work and expirience -->
+
+
+<div class="white-container3">
+	<h1 class="Section-title">Work & experience</h1>
+	<div class="container1 margin">
+			<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+				<div class="flipper">
+				<div class="front">
+					<img src="img/raiff.jpg">
+				</div>
+				<div class="back">
+					<h2>Raiffeisen Bank Zenica<em>(March 2017 - June 2017)</em></h2>
+				    <p class="section">Worked in Raiffeisen Bank as an intern while in Highschool.</p>
+				</div>
+				</div>
+			</div>
+
+			<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+				<div class="flipper">
+				<div class="front">
+					<img src="img/hackathon.jpg">
+				</div>
+				<div class="back">
+					<h2>EPBiH Hackathon<em>(Winter 2018)</em></h2>
+				    <p class="section">Participated in EPBiH hackathon in Sarajevo. MY team worked on a educational game for children.</p>
+				</div>
+				</div>
+			</div>
+
+			<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+				<div class="flipper">
+				<div class="front">
+					<img src="img/fir.jpg">
+				</div>
+				<div class="back">
+					<h2>Fit Mostar<em>(2019)</em></h2>
+				    <p class="section">Participated in yearly Fit coding challange with my club <a id="devius" href="https://devius.netlify.com/">DevIUS</a> (2018)</p>
+				</div>
+				</div>
+			</div>
+
+			<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+				<div class="flipper">
+				<div class="front">
+					<img src="img/devDays.png">
+				</div>
+				<div class="back">
+					<h2>Dev Days by Atlant BiH<em>(2018)</em></h2>
+				    <p class="section">Participated in yearly DevDays hosted by AtlantBh on IUS. (2018)</p>
+				</div>
+				</div>
+			</div>
+		</div>
+		<div class="cent-cont">
+		<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+				<div class="flipper">
+				<div class="front">
+					<img src="img/ieee.jpg">
+				</div>
+				<div class="back">
+					<h2>IEEE congress in Sarajevo<em>(2018)</em></h2>
+				    <p class="section">Participated in the 2018 IEEE congress on SSST.</p>
+				</div>
+				</div>
+			</div>
+		</div>
+  	</div>
+<!-- Skillz -->
+  	<div class="gray-container">
+		<h1 class="Section-title zero">Skills</h1>
+		<div class="upper container2">
+			<div class="skillz">
+				<h3>Developer skills:</h3>
+				<li>
+					<h5>CSS,HTML<h5><span class="barz"><span class="html"></span></span>
+				</li>
+				<li>
+					<h5>Javascript<h5><span class="barz"><span class="js"></span></span>
+				</li>
+				<li>
+					<h5>jQuery<h5><span class="barz"><span class="jq"></span></span>
+				</li>
+				<li>
+					<h5>PHP<h5><span class="barz"><span class="php"></span></span>
+				</li>
+				<li>
+					<h5>C/C++<h5><span class="barz"><span class="cc"></span></span>
+				</li>
+			</div>
+				<div class="skillz">
+					<h3>Projects:</h3>
+					<ul class="Skill-ul">
+						<li>Human resource managment system</li>
+						<li>DevIUS website</li>
+						<li>Smart PI car</li>
+						<li>Educational Game about electricity</li>
+					</ul>
+				</div>
+			</div>
+	<div class="languages">
+		<h3>Languages:</h3>
+		<div class="container3">
+			<div class="bosEng">
+				<div class="first">
+					<h3>Bosnian</h3>
+					<div class="c100 p100 big green">
+			            <span>100%</span>
+			            <div class="slice">
+			                <div class="bar"></div>
+			                <div class="fill"></div>
+			            </div>
+			        </div>
+		        </div>
+
+		        <div class="first">
+					<h3>English</h3>
+					<div class="c100 p100 big blue">
+			            <span>100%</span>
+			            <div class="slice">
+			                <div class="bar"></div>
+			                <div class="fill"></div>
+			            </div>
+			        </div>
+		        </div>
+	    	</div>
+			<div class="gerTur">
+				<h3>German</h3>
+				<div class="c100 p50 big orange">
+		            <span>50%</span>
+		            <div class="slice">
+		                <div class="bar"></div>
+		                <div class="fill"></div>
+		            </div>
+		        </div>
+	     	</div>
+	    </div>
+	        <div class="container4">
+		        <div class="jap">
+			        <div class="first">
+						<h3>Turkish</h3>
+						<div class="c100 p20 big green">
+				            <span>20%</span>
+				            <div class="slice">
+				                <div class="bar"></div>
+				                <div class="fill"></div>
+				            </div>
+				        </div>
+			        </div>
+				    <div class="first">
+						<h3>Japanese</h3>
+						<div class="c100 p20 big">
+						    <span>20%</span>
+						    <div class="slice">
+						        <div class="bar"></div>
+						        <div class="fill"></div>
+						    </div>
+						</div>
+					</div>
+		       	</div>
+	        </div> 
+		</div>
+	</div>
+	<div class="gray-containerC">
+		<form class="contact" method="post" action="php/email.php">
+			<h2>Contact me</h2>
+			<div class="rowF">
+				<div class="colF">
+					<div class="inputBox">
+						<input type="text" name="name" required="required">
+						<span class="textF">First Name</span>
+						<span class="lineF"></span> 
+					</div>
+				</div>
+				<div class="colF">
+					<div class="inputBox">
+						<input type="text" name="surname" required="required">
+						<span class="textF">Last Name</span>
+						<span class="lineF"></span> 
+					</div>
+				</div>
+			</div>
+			<div class="rowF">
+				<div class="colF">
+					<div class="inputBox">
+						<input type="text" name="email" required="required">
+						<span class="textF">Email</span>
+						<span class="lineF"></span> 
+					</div>
+				</div>
+				<div class="colF">
+					<div class="inputBox">
+						<input type="text" name="phone" required="required">
+						<span class="textF">Mobile</span>
+						<span class="lineF"></span> 
+					</div>
+				</div>
+			</div>
+			<div class="rowF">
+				<div class="colF">
+					<div class="inputBox textarea">
+						<textarea required="required" name="message"></textarea>
+						<span class="textF">Type your message here..</span>
+						<span class="lineF" style="width: 98%"></span> 
+					</div>
+				</div>
+			</div>
+			<div class="rowF">
+				<div class="colF">
+					<input type="submit" name="" value="Send">
+				</div>
+			</div>
+		</form>
+	</div>
+
+</div>
+	<script>document.write('<script src="http://' + (location.host || '${1:localhost}').split(':')[0] + ':${2:35729}/livereload.js?snipver=1"></' + 'script>')</script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
